@@ -73,7 +73,7 @@ func New(dataCenterID, workerID int64) uuid.IUUID {
 	}
 }
 
-// New 实例一个雪花算法实例
+// NewCfg 实例一个雪花算法实例
 func NewCfg(dataCenterID, workerID int64, cfgTime time.Time) uuid.IUUID {
 	return &workerImpl{
 		dataCenterID: dataCenterID,
